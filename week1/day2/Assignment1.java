@@ -10,7 +10,12 @@ public class Assignment1 {
 				
 				System.out.println("the number is odd " + i);
 			}
-			
+			else if(i%2==0){
+				
+				System.out.println("the number is even s" + i);
+				
+				
+			}
 			
 		}
 			

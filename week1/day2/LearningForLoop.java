@@ -5,6 +5,9 @@ import java.util.Iterator;
 public class LearningForLoop {
 	public static void main(String[] args) {
 		
+		LearnMethod bc=new LearnMethod();
+		bc.getCycleCount();
+		
 		//type for --ctrl+space -->click 2ndone -->click Enter
 		//data type variable
 		

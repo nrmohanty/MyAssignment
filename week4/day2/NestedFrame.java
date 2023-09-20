@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class NestedFrame {
 public static void main(String[] args) throws InterruptedException {
@@ -16,6 +17,8 @@ public static void main(String[] args) throws InterruptedException {
 	Thread.sleep(2000);
 	WebElement framele=driver.findElement(By.xpath("//h5[text()=' Click Me (Inside Nested frame)']/following::iframe"));
 	driver.switchTo().frame(framele);
+	
+	Actions act=new Actions(driver);
 	
 	//switch to child iframe
 	driver.switchTo().frame(0);

@@ -5,13 +5,15 @@ import java.time.Duration;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ClassRoom_Activity1 {
 	public static void main(String[] args) {
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_confirm");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		
+		Actions act=new Actions(driver);
 		driver.switchTo().frame("iframeResult");
 		driver.findElement(By.xpath("//button[text()='Try it']")).click();
 		

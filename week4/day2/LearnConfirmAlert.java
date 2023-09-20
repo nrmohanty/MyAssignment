@@ -20,6 +20,8 @@ public class LearnConfirmAlert {
 		Thread.sleep(0);
 		simpleAlert.accept();
 		
+		
+		
 		String successmessage=driver.findElement(By.id("confirm_result")).getText();
 		if (successmessage.contains("Nihar")) {
 			System.out.println("Alert is Accepeted");

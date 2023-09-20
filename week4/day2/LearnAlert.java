@@ -13,9 +13,11 @@ public class LearnAlert {
 		
 		Alert simpleAlert=driver.switchTo().alert();
 		String alertMessage=simpleAlert.getText();
+		
 		System.out.println(alertMessage);
 		Thread.sleep(0);
 		simpleAlert.accept();
+		
 		String successmessage=driver.findElement(By.id("simple_result")).getText();
 		if (successmessage.contains("success")) {
 			System.out.println("Alert is handled");

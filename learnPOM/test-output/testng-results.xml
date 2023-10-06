@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-02T22:47:53 IST" name="Suite" finished-at="2023-10-02T22:48:42 IST" duration-ms="49334">
+    <groups>
+    </groups>
+    <test started-at="2023-10-02T22:47:53 IST" name="Test" finished-at="2023-10-02T22:48:42 IST" duration-ms="49334">
+      <class name="testcases.MergeLead">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testcases.MergeLead@6bd61f98]" started-at="2023-10-02T22:48:15 IST" name="precondition" finished-at="2023-10-02T22:48:17 IST" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="mergeLead()[pri:0, instance:testcases.MergeLead@6bd61f98]" started-at="2023-10-02T22:48:17 IST" name="mergeLead" finished-at="2023-10-02T22:48:42 IST" duration-ms="25106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mergeLead -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testcases.MergeLead@6bd61f98]" started-at="2023-10-02T22:48:42 IST" name="postcondition" finished-at="2023-10-02T22:48:42 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testcases.MergeLead -->
+      <class name="testcases.CreateContact">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testcases.CreateContact@29215f06]" started-at="2023-10-02T22:47:53 IST" name="precondition" finished-at="2023-10-02T22:47:58 IST" duration-ms="5450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="mergeLead()[pri:0, instance:testcases.CreateContact@29215f06]" started-at="2023-10-02T22:47:58 IST" name="mergeLead" finished-at="2023-10-02T22:48:10 IST" duration-ms="11598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mergeLead -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testcases.CreateContact@29215f06]" started-at="2023-10-02T22:48:10 IST" name="postcondition" finished-at="2023-10-02T22:48:10 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testcases.CreateContact -->
+      <class name="testcases.EditLead">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testcases.EditLead@4efac082]" started-at="2023-10-02T22:48:10 IST" name="precondition" finished-at="2023-10-02T22:48:12 IST" duration-ms="1860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="editLead()[pri:0, instance:testcases.EditLead@4efac082]" started-at="2023-10-02T22:48:12 IST" name="editLead" finished-at="2023-10-02T22:48:24 IST" duration-ms="12467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editLead -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testcases.EditLead@4efac082]" started-at="2023-10-02T22:48:24 IST" name="postcondition" finished-at="2023-10-02T22:48:25 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testcases.EditLead -->
+      <class name="testcases.RunLogin">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testcases.RunLogin@bae7dc0]" started-at="2023-10-02T22:47:53 IST" name="precondition" finished-at="2023-10-02T22:47:59 IST" duration-ms="5832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="runLogin()[pri:0, instance:testcases.RunLogin@bae7dc0]" started-at="2023-10-02T22:47:59 IST" name="runLogin" finished-at="2023-10-02T22:48:00 IST" duration-ms="1471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testcases.RunLogin@bae7dc0]" started-at="2023-10-02T22:48:00 IST" name="postcondition" finished-at="2023-10-02T22:48:00 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testcases.RunLogin -->
+      <class name="testcases.CreateLead">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testcases.CreateLead@59505b48]" started-at="2023-10-02T22:48:00 IST" name="precondition" finished-at="2023-10-02T22:48:02 IST" duration-ms="1859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="createLead()[pri:0, instance:testcases.CreateLead@59505b48]" started-at="2023-10-02T22:48:02 IST" name="createLead" finished-at="2023-10-02T22:48:15 IST" duration-ms="12833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testcases.CreateLead@59505b48]" started-at="2023-10-02T22:48:15 IST" name="postcondition" finished-at="2023-10-02T22:48:15 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testcases.CreateLead -->
+      <class name="testcases.DeleteLead">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:testcases.DeleteLead@48aca48b]" started-at="2023-10-02T22:48:25 IST" name="precondition" finished-at="2023-10-02T22:48:26 IST" duration-ms="1771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="deleteLead()[pri:0, instance:testcases.DeleteLead@48aca48b]" started-at="2023-10-02T22:48:26 IST" name="deleteLead" finished-at="2023-10-02T22:48:39 IST" duration-ms="12679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLead -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:testcases.DeleteLead@48aca48b]" started-at="2023-10-02T22:48:39 IST" name="postcondition" finished-at="2023-10-02T22:48:39 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+      </class> <!-- testcases.DeleteLead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

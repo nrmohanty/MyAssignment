@@ -31,7 +31,7 @@ public class Readexcel {
 		
 		//total no of columns
 		int columncount=sheet.getRow(0).getLastCellNum();
-		System.out.println("The total no of rwos is "+columncount);
+		System.out.println("The total no of coulmns is "+columncount);
 		
 		String[][] data=new String[rowcount][columncount];
 		

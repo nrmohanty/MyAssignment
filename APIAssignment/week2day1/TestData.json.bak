@@ -1,0 +1,14 @@
+[
+	{
+		"short_desc": "laptop service",
+		"desc": "monitor problem"
+	},
+	{
+		"short_desc": "Air coniditioner service",
+		"Desc": "Ac compressor issue"
+	},
+	{
+		"short_desc": "Washing machine service",
+		"desc": "water lock"
+	}
+]

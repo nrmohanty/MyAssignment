@@ -1,0 +1,277 @@
+{
+	"info": {
+		"_postman_id": "f6c6cf8c-e964-4b8c-b847-9874202eb5d2",
+		"name": "Week2Day1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Incident",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validate Status code\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"var resp=pm.response.json();\r",
+							"var sys_id1 = resp.result.sys_id;\r",
+							"pm.globals.get(\"variable_key\");\r",
+							"console.log(sys_id1);\r",
+							"pm.globals.set(\"system_id\",sys_id1);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"{{desc}}}}\",\r\n    \"short_description\": \"{{Short_desc}}}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/now/table/{{incident}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"{{incident}}"
+					],
+					"query": [
+						{
+							"key": "Raw",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllIncidents",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"INC\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/now/table/{{incident}}?sysparm_fields=short_description,description,number,sys_id",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"{{incident}}"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "short_description,description,number,sys_id"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateIncident",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Mobile\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Mobile service\",\r\n    \"short_description\": \"Mobile\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/now/table/{{incident}}/{{system_id}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"{{incident}}",
+						"{{system_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteIncident",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/now/table/{{incident}}/{{system_id}}",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"{{incident}}",
+						"{{system_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllChangeRequest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"CHG\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/now/table/{{change_request}}?sysparm_fields=short_description,description,number,sys_id",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"{{change_request}}"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "short_description,description,number,sys_id"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "incident",
+			"value": "incident",
+			"type": "default"
+		},
+		{
+			"key": "change_request",
+			"value": "change_request",
+			"type": "default"
+		}
+	]
+}
